@@ -20,6 +20,10 @@ padding: 0;
 margin: 0;
 
 }
+.dark-mode {
+  background-color: black;
+  color: white;
+}	  
  #top-bar{
  margin-top: -10px;
 max-width:100%;
@@ -512,7 +516,7 @@ color:white;
 <div class="menu-items">
   <a class="menu-links" href="#">Feedback</a>
   </div>
-  <div class="menu-items-button2 d-none d-lg-block">
+  <div class="menu-items-button2 d-none d-lg-block" onclick="myFunction()">
   <button class="light-dark" style="outline:0 !important;"><img src="font-dark.PNG"/></button>
   </div>
   <div class="menu-items-button1 d-none d-lg-block">
@@ -1215,7 +1219,10 @@ $('.carousel .carousel-item').each(function(){
         next.children(':first-child').clone().appendTo($(this));
       }
 });
-
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
 
   </script>
   
