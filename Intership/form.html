@@ -23,6 +23,10 @@ margin: 0;
 .dark-mode {
   background-color: black;
   color: white;
+}
+.light-mode {
+  background-color: white;
+  
 }	  
  #top-bar{
  margin-top: -10px;
@@ -519,7 +523,7 @@ color:white;
   <div class="menu-items-button2 d-none d-lg-block" onclick="myFunction()">
   <button class="light-dark" style="outline:0 !important;"><img src="font-dark.PNG"/></button>
   </div>
-  <div class="menu-items-button1 d-none d-lg-block">
+  <div class="menu-items-button1 d-none d-lg-block" onclick="myFunction2()">
   <button class="light-dark" style="outline:0 !important;"><img src="font-light.PNG"/></button>
   </div>
   <div class="menu-items-FontAdjust3 d-none d-lg-block">
@@ -1223,7 +1227,11 @@ function myFunction() {
    var element = document.body;
    element.classList.toggle("dark-mode");
 }
+function myFunction2(){
+ var element = document.body;
+   element.classList.toggle("light-mode");
 
+}
   </script>
   
   
